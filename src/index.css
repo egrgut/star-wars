@@ -3,7 +3,7 @@
 :root {
   --color-main: #ffc500;
   --bg-color-grey: rgba(68, 69, 67, 0.6);
-  --bg-color-red: rgba(204, 3, 35, 0.5);
+  --bg-color-red: rgba(255, 0, 0, 0.5);
 }
 
 body {
