@@ -31,25 +31,30 @@ const Contact = () => {
     }, [])
 
     return (
-        <form className="container" onSubmit={e => {
+        <form className={"bg-white w-4/5 p-5 mx-auto"} onSubmit={e => {
             e.preventDefault();
         }}>
-            <label>First Name
-                <input type="text" name="firstname" placeholder="Your name.."/>
+            <label className={"w-full"}>First Name
+                <input className={"w-full p-3 border-[#ccc] border-4 mt-1.5 mb-4  text-black rounded-md resize"}
+                       type="text" name="firstname" placeholder="Your name.."/>
             </label>
-            <label>Last Name
-                <input type="text" name="lastname" placeholder="Your last name.."/>
+            <label className={"w-full"}>Last Name
+                <input className={"w-full p-3 border-[#ccc] border-4 mt-1.5 mb-4  text-black rounded-md resize"}
+                       type="text" name="lastname" placeholder="Your last name.."/>
             </label>
-            <label>Planet
-                <select name="planet">
+            <label className={"w-full"}>Planet
+                <select className={"w-full p-3 border-[#ccc] border-4 mt-1.5 mb-4  text-black rounded-md resize"}
+                        name="planet">
                     {planets.map(item => <option value={item} key={item}>{item}</option>)}
                 </select>
             </label>
 
-            <label>Subject
-                <textarea name="subject" placeholder="Write something.."></textarea>
+            <label className={"w-full"}>Subject
+                <textarea className={"w-full p-3 border-[#ccc] border-4 mt-1.5 mb-4  text-black rounded-md resize"}
+                          name="subject" placeholder="Write something.."></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <button className={"bg-[#04AA6D] rounded-md px-5 py-3   cursor-pointer text-center  text-white hover:bg-[#45a049] hover:text-white"}
+                type="submit">Submit</button>
         </form>
     )
 }
